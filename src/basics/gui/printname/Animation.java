@@ -1,4 +1,4 @@
-package basics.printname;
+package basics.gui.printname;
 
 import javax.swing.*;
 import java.awt.*;

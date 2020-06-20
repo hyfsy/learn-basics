@@ -1,0 +1,14 @@
+像接口一样编写native方法，
+在src目录内执行javah 包+类（只有类名），生成.h后缀的文件
+
+创建一个dll工程---Win32 Dynamic-Link Library工程
+编写本地函数（c/cpp文件），导入生成的.h后缀的文件，实现文件中的方法
+导入头文件到VC6.0中
+	JDK安装目录中的include的jni.h文件和include/win32的jawt_md.h、jni_md.h
+构建.cpp文件，会在Debug目录下生成一个动态链接库文件（.dll）
+
+我们就可以将该dll文件拷贝到环境变量path所包含的目录下给咱们的Java程序调用了，
+	我们也可以将dll所在的工程目录加入到环境变量path中去，这样可以避免每次都要拷贝的麻烦
+首先导入动态链接库
+	System.loadLibrary("");//动态链接库的名称，不加后缀
+然后就能直接调用native方法了

@@ -1,6 +1,6 @@
-package basics.printname.chinese;
+package basics.gui.printname.chinese;
 
-import basics.printname.AbstractChinese;
+import basics.gui.printname.AbstractChinese;
 
 import javax.swing.*;
 

@@ -1,9 +1,11 @@
-package test.bin;
+package basics.jvm;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 测试gc回收及jvisualvm的使用
+ *
  * @author baB_hyf
  * @date 2020/04/25
  */

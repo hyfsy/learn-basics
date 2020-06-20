@@ -1,5 +1,8 @@
-package basics;
+package test;
 
+/**
+ * 对象创建时的一些操作的执行过程
+ */
 public class ObjectCreate {
     public static void main(String[] args) {
         new Son();

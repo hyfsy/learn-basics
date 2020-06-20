@@ -1,0 +1,4 @@
+导入4个.h文件
+创建一个dll工程---Win32 Dynamic-Link Library工程
+构建.cpp文件，成功会在Debug目录下生成一个动态链接库文件（.dll）
+失败：cpp文件内再include <jawt_md.h>、<jni_md.h>两个文件

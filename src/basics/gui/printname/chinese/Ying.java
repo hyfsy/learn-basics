@@ -1,7 +1,7 @@
-package basics.printname.chinese;
+package basics.gui.printname.chinese;
 
-import basics.printname.Animation;
-import basics.printname.Coordinate;
+import basics.gui.printname.Animation;
+import basics.gui.printname.Coordinate;
 
 import javax.swing.*;
 

@@ -1,26 +1,20 @@
 package test;
 
-import java.math.RoundingMode;
-import java.text.SimpleDateFormat;
-import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.UnaryOperator;
 
+/**
+ * 不常用操作及对象及方法
+ */
 public class HelloTest {
 
     public static void main(String[] args) {
-        System.out.println(1<<24|1<<16|1);
-        System.out.println();
-        String.class.cast("asdf");
+        // ???
+        System.out.println(1 << 24 | 1 << 16 | 1);
 
-        ArrayList list = new ArrayList<>();
-        new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        list.toArray();
+        // 线程安全的随机数
         ThreadLocalRandom current = ThreadLocalRandom.current();
 
-
-        String s = "";
-        s = s.replace("\n", "").replace("\t", "");
-        System.out.println(s);
+        // Class的cast方法
+        String.class.cast("asdf");
     }
 }

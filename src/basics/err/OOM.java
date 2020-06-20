@@ -1,4 +1,4 @@
-package basics;
+package basics.err;
 
 import java.util.ArrayList;
 import java.util.List;

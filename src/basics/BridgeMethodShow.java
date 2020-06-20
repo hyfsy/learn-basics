@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * 测试桥接方法
  *
- * {@link BridgeMethodResolver}
+ * 查看 Spring的 {@link BridgeMethodResolver}
  *
  * @author baB_hyf
  * @date 2020/04/11

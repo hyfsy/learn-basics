@@ -5,6 +5,8 @@ import sun.misc.ProxyGenerator;
 import java.io.FileOutputStream;
 
 /**
+ * 创建 jdk Proxy 的class
+ *
  * @author baB_hyf
  * @date 2020/05/18
  */

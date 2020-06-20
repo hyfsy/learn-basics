@@ -4,6 +4,9 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.concurrent.*;
 
+/**
+ * 未开始的线程测试
+ */
 public class ThreadTest {
     public static void main(String[] args) {
         new Thread(System.out::println);

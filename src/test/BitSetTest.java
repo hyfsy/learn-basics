@@ -1,5 +1,8 @@
 package test;
 
+/**
+ * BitSet 的内部原理，及应用
+ */
 public class BitSetTest
 {
 

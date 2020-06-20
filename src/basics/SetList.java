@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * remove() 的坑
+ */
 public class SetList {
     public static void main(String[] args) {
         Set<Integer> set = new HashSet<>();

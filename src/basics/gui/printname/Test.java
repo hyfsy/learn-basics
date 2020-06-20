@@ -1,6 +1,6 @@
-package basics.printname;
+package basics.gui.printname;
 
-import basics.printname.chinese.He;
+import basics.gui.printname.chinese.He;
 
 /**
  * 测试打印汉字

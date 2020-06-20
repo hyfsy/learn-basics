@@ -6,7 +6,10 @@ package test;
 import java.io.*;
 import java.util.Objects;
 
-public class CleanTest {
+/**
+ * 未完成的jdk9 的 Cleaner 测试
+ */
+public class CleanerTest {
 
     private String s;
 
@@ -15,7 +18,7 @@ public class CleanTest {
 
 //        Integer.compare()
 //        String.CASE_INSENSITIVE_ORDER;
-        System.out.println(CleanTest.class instanceof Object);
+        System.out.println(CleanerTest.class instanceof Object);
         try {
             PrintStream printStream = new PrintStream("asdf");
             printStream.print("asdf");
@@ -43,8 +46,8 @@ public class CleanTest {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CleanTest cleanTest = (CleanTest) o;
-        return Objects.equals(s, cleanTest.s);
+        CleanerTest cleanerTest = (CleanerTest) o;
+        return Objects.equals(s, cleanerTest.s);
     }
 
     @Override

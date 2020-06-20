@@ -1,6 +1,8 @@
-package test.bin;
+package basics.jvm;
 
 /**
+ * 测试线程阻塞及jstack的使用
+ *
  * @author baB_hyf
  * @date 2020/04/21
  */

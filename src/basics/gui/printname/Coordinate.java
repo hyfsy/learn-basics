@@ -1,4 +1,4 @@
-package basics.printname;
+package basics.gui.printname;
 
 /**
  * 每次绘制的点坐标
