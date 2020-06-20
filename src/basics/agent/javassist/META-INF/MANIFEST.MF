@@ -1,0 +1,4 @@
+Premain-Class: basics.agent.javassist.AgentDemo1
+Agent-Class: basics.agent.javassist.AgentDemo1
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
