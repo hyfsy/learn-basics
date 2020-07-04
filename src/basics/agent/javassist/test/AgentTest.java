@@ -5,6 +5,7 @@ import com.sun.tools.attach.VirtualMachine;
 
 /**
  * 调用时，可以使用 -javaagent:[jar-path] 导入jar包
+ *      -javaagent:E:\study\idea2\learn-basics\src\basics\agent\javassist\lib\agent-test.jar
  * 或者使用 com.sun.tools.attach.VirtualMachine（java的lib文件夹下）
  *
  * @author baB_hyf
