@@ -1,5 +1,8 @@
 package test;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import java.lang.reflect.Field;
 
 /**
@@ -10,16 +13,20 @@ import java.lang.reflect.Field;
  */
 public class IntegerTest {
 
-    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
+    @Test
+    public void testInt() {
+        int a = 1;
+        int b = a + a; // 原始值2在下方变为包装类时调用valueOf方法寻找缓存索引为2的值
+        System.out.printf("%d + %d = %d", a, a, b);
+    }
+
+    @Before
+    public void before() throws NoSuchFieldException, IllegalAccessException {
         Class<?> cache = Integer.class.getDeclaredClasses()[0]; // 1
         Field myCache = cache.getDeclaredField("cache"); // 2
         myCache.setAccessible(true); // 3
 
         Integer[] newCache = (Integer[]) myCache.get(cache); // 4 缓存总共256，-128~127
-        newCache[132] = newCache[133]; // 5 修改缓存4的位置的值为5
-
-        int a = 2;
-        int b = a + a; // 原始值4在下方变为包装类时调用valueOf方法寻找缓存索引为4的值
-        System.out.printf("%d + %d = %d", a, a, b);
+        newCache[130] = newCache[131]; // 5 修改缓存2的位置的值为3
     }
 }

@@ -8,7 +8,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class HelloTest {
 
     public static void main(String[] args) {
-        // ???
+
+        // 二进制与
         System.out.println(1 << 24 | 1 << 16 | 1);
 
         // 线程安全的随机数
