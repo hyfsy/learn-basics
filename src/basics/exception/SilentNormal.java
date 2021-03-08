@@ -8,8 +8,8 @@ import java.io.IOException;
  */
 public class SilentNormal {
 
-    private static RuntimeException softenException(Exception e) {
-        return checkednessRemover(e);
+    public static RuntimeException rethrow(Throwable e) {
+        return uncheckedThrow(e);
     }
 
     /**
@@ -17,13 +17,14 @@ public class SilentNormal {
      * <p>
      * 直接抛出异常则不走
      */
-    private static <T extends Exception> T checkednessRemover(Exception e) throws T {
+    @SuppressWarnings("unchecked")
+    private static <T extends Throwable> T uncheckedThrow(Throwable e) throws T {
         throw (T) e;
         // return (T) e;
     }
 
     public static void main(String[] args) {
         IOException ioException = new IOException();
-        throw softenException(ioException);
+        rethrow(ioException);
     }
 }
