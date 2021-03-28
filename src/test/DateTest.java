@@ -1,8 +1,10 @@
 package test;
 
+import org.junit.Test;
+
 import java.time.Clock;
 import java.time.Instant;
-import java.util.Optional;
+import java.util.Calendar;
 import java.util.TimeZone;
 
 /**
@@ -10,7 +12,8 @@ import java.util.TimeZone;
  */
 public class DateTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test1() {
         Instant now = Instant.now();
         System.out.println(now);
 
@@ -23,5 +26,10 @@ public class DateTest {
         Clock clock1 = Clock.systemDefaultZone();
         System.out.println(clock);
         System.out.println(clock1);
+    }
+
+    @Test
+    public void test2() {
+        System.out.println(Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles")).getTime());
     }
 }
