@@ -10,7 +10,7 @@
 
 ```html
 <HTML>
-<mlet code=com.hyf.Payload archive=jmx_mbean.jar name=basics.jmx.mbean.remote:name=Payload></mlet>
+<mlet code=com.hyf.Payload archive=jmx_mbean.jar name=basics.jmx.remote:name=Payload></mlet>
 </HTML>
 ```
 

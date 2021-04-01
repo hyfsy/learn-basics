@@ -1,4 +1,4 @@
-package basics.jmx.mbean.attack;
+package basics.jmx.attack;
 
 import javax.management.InstanceAlreadyExistsException;
 import javax.management.MBeanServerConnection;

@@ -1,4 +1,4 @@
-package basics.jmx.mbean.remote;
+package basics.jmx.remote;
 
 import javax.management.*;
 import javax.management.loading.MLet;
@@ -27,6 +27,7 @@ public class RemoteMbeanRegisterServer {
         mBeanServer.registerMBean(mLet, objectNameMLet);
 
         // 实际调用的注册方法
+        // 也可jvisualvm界面调用
         // mLet.getMBeansFromURL("http://localhost:8701/mlet");
 
         // 启用一个rmi端口，方便客户端通过rmi连接
