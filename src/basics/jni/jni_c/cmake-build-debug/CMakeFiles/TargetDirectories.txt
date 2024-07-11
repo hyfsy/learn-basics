@@ -1,0 +1,3 @@
+D:/0workspace/code/c/hello_jni2/cmake-build-debug/CMakeFiles/hello_jni2.dir
+D:/0workspace/code/c/hello_jni2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/0workspace/code/c/hello_jni2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

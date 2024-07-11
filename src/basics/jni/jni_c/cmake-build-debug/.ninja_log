@@ -1,0 +1,6 @@
+# ninja log v5
+0	194	7254361919953766	CMakeFiles/hello_jni2.dir/library.c.obj	b4a0283eb726c9ec
+196	477	7254361922703464	libhello_jni2.dll	d5112c7dffb96f20
+196	477	7254361922703464	libhello_jni2.dll.a	d5112c7dffb96f20
+2	222	7254362758669221	libhello_jni2.dll	d5112c7dffb96f20
+2	222	7254362758669221	libhello_jni2.dll.a	d5112c7dffb96f20
