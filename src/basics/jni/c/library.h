@@ -1,6 +1,6 @@
 #ifndef HELLO_JNI2_LIBRARY_H
 #define HELLO_JNI2_LIBRARY_H
-#include "com_batchsight_demo_test_JNI.h"
+#include "basics_jni_java_JNI.h"
 
 void hello(void);
 
